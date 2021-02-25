@@ -6,3 +6,15 @@
 body {
     font-family: helvetica, arial, sans-serif;
 }
+
+.kotak-dua {
+	display:grid;
+	grid-template-columns: repeat(2, 2fr);
+	margin-top: 100px;
+}
+.kotak1 {
+	background-color: violet;
+}
+.kotak2 {
+	background-color: salmon;
+}
