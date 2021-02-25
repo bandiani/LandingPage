@@ -9,12 +9,26 @@ body {
 
 .kotak-dua {
 	display:grid;
-	grid-template-columns: repeat(2, 2fr);
+	grid-template-columns: 2fr 2fr;
 	margin-top: 100px;
+	grid-template-areas: 'kotak1 kotak2 kotak2'
+						'artikel artikel artikel';
 }
 .kotak1 {
+	grid-area: kotak1;
 	background-color: violet;
 }
 .kotak2 {
+	grid-area: kotak2;
 	background-color: salmon;
+}
+.artikel {
+	grid-area: artikel;
+	text-align: center;
+	background-color: #f3f7f7;
+	/* margin: 40px 100px; */
+	/* width: 100%; */
+}
+.artikel h2 {
+	margin-bottom: 15px;
 }
